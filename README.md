@@ -3,12 +3,13 @@
 #### Nessus는 Tenable에서 개발한 취약점 스캐너(Vulnerability Scanner) 로, 네트워크, 시스템, 웹 애플리케이션 등의 보안 취약점을 자동으로 분석하는 도구 주로 보안 전문가, 침투 테스터, 시스템 관리자 등이 취약점 점검 및 보안 감사를 수행하는 데 사용됩니다.
 
 - ### Nessus Basic Network Scan(환경 : Metasploitable2-Linux)
-    #### Metasploitable2-Linux 서버를 통해 Nessus Basic Network Scan 탐지 실시
-  검사 결과 
+   #### Metasploitable2-Linux 서버를 통해 Nessus Basic Network Scan 탐지 실시
+   #### 검사 결과 
   
   ![image](https://github.com/user-attachments/assets/6d4e93ce-f3a7-419d-b355-ce65fba681c2)
-
-#### 이번 점검을 통해 새로운 정보들을 확인할 수 있었으나, 주요 통신기반 취약점 검사 리스트의 항목들을 모두 탐지하려면 Nessus Professional의 Compliance 기능을 사용하여 .audit 파일을 생성하고 커스텀 점검을 수행해야 했습니다. 그로 인해 완벽한 점검은 이루어지지 않았지만, 주요 통신기반 취약점 검사 리스트를 탐지시 사용 할 .audit 유형들을 정리해보겠습니다.
+  ![image](https://github.com/user-attachments/assets/b93eadd7-efa8-46ca-870d-9723dd9587a5)
+  
+  #### 이번 점검을 통해 새로운 정보들을 확인할 수 있었으나(AJR, 배너 관리 등), 주요 통신기반 취약점 검사 리스트의 항목들을 모두 탐지하려면 Nessus Professional의 Compliance 기능을 사용하여 .audit 파일을 생성하고 커스텀 점검을 수행해야 했습니다. 그로 인해 완벽한 점검은 이루어지지 않았지만, 주요 통신기반 취약점 검사 리스트 체크 Python 코드 제작한 경험으로() 탐지 시 유용하게 사용 될 .audit 유형들을 정리해보겠습니다.
 
 - ###  주요 통신기반 취약점 검사 리스트의 탐지를 위한 .audit 유형
   참조 : https://docs.tenable.com/nessus/compliance-checks-reference/Content/UnixConfigurationCustomItems.htm
