@@ -79,3 +79,4 @@
   status: OFF
   </custom_item>
   ```
+  #### 보고서 형식 (Network Scan Test_rreotw.pdf) 위에 명시
