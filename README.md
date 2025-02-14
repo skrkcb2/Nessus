@@ -9,7 +9,7 @@
   ![image](https://github.com/user-attachments/assets/6d4e93ce-f3a7-419d-b355-ce65fba681c2)
   ![image](https://github.com/user-attachments/assets/b93eadd7-efa8-46ca-870d-9723dd9587a5)
   
-  #### 이번 점검을 통해 새로운 정보들을 확인할 수 있었으나(AJR, 배너 관리 등), 주요 통신기반 취약점 검사 리스트의 항목들을 모두 탐지하려면 Nessus Professional의 Compliance 기능을 사용하여 .audit 파일을 생성하고 커스텀 점검을 수행해야 했습니다. 그로 인해 완벽한 점검은 이루어지지 않았지만, 주요 통신기반 취약점 검사 리스트 체크 Python 코드 제작한 경험으로() 탐지 시 유용하게 사용 될 .audit 유형들을 정리해보겠습니다.
+  #### 이번 점검을 통해 새로운 정보들을 확인할 수 있었으나(AJR, 배너 관리 등), 주요 통신기반 취약점 검사 리스트의 항목들을 모두 탐지하려면 Nessus Professional의 Compliance 기능을 사용하여 .audit 파일을 생성하고 커스텀 점검을 수행해야 했습니다. 그로 인해 완벽한 점검은 이루어지지 않았지만, 주요 통신기반 취약점 검사 리스트 체크 Python 코드 제작한 경험으로(https://github.com/skrkcb2/kisa-linux) 탐지 시 유용하게 사용 될 .audit 유형들을 정리해보겠습니다.
 
 - ###  주요 통신기반 취약점 검사 리스트의 탐지를 위한 .audit 유형
   참조 : https://docs.tenable.com/nessus/compliance-checks-reference/Content/UnixConfigurationCustomItems.htm
