@@ -8,9 +8,10 @@
   
   ![image](https://github.com/user-attachments/assets/6d4e93ce-f3a7-419d-b355-ce65fba681c2)
 
-#### 이번 점검을 통해 새로운 정보들을 확인할 수 있었으나, 주요 통신기반 취약점 검사 리스트의 항목들을 모두 탐지하려면 Nessus Professional의 Compliance 기능을 사용하여 .audit 파일을 생성하고 커스텀 점검을 수행해야 했습니다. 그로 인해 완벽한 점검은 이루어지지 않았지만, 주요 통신기반 취약점 검사 리스트의 유형을 기반으로 간략하게 .audit 유형들을 정리해보겠습니다.
+#### 이번 점검을 통해 새로운 정보들을 확인할 수 있었으나, 주요 통신기반 취약점 검사 리스트의 항목들을 모두 탐지하려면 Nessus Professional의 Compliance 기능을 사용하여 .audit 파일을 생성하고 커스텀 점검을 수행해야 했습니다. 그로 인해 완벽한 점검은 이루어지지 않았지만, 주요 통신기반 취약점 검사 리스트를 탐지시 사용 할 .audit 유형들을 정리해보겠습니다.
 
 - ###  주요 통신기반 취약점 검사 리스트의 탐지를 위한 .audit 유형
+  참조 : https://docs.tenable.com/nessus/compliance-checks-reference/Content/UnixConfigurationCustomItems.htm
   ```
   ## 해당 파일에 문자열 존재 여부 O
   <custom_item>
@@ -64,5 +65,14 @@
   timeout: "600"
   expect: "FreeBSD (4\.(9|[1-9][0-9])|[5-9]\.)"
   dont_echo_cmd: YES
+  </custom_item>
+  ```
+  ```
+  ## PS 커맨드를 통한 프로세스 체크 
+  <custom_item>
+  system: "Linux"
+  type: PROCESS_CHECK
+  name: "auditd"
+  status: OFF
   </custom_item>
   ```
